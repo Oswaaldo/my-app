@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.861 s <<< FAILURE! - in TestSuite
+com.example.tests.LoginTest.testLogin  Time elapsed: 10.599 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '192.168.1.4.homeoffice.wal-mart.com', ip: 'fe80:0:0:0:454:fcbc:78e9:b4d0%en0'
+	at com.example.tests.LoginTest.testLogin(LoginTest.java:11)
+Caused by: org.openqa.selenium.WebDriverException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '17.0.11'
+Driver info: driver.version: AndroidDriver
+	at com.example.tests.LoginTest.testLogin(LoginTest.java:11)
+Caused by: java.lang.reflect.InvocationTargetException
+	at com.example.tests.LoginTest.testLogin(LoginTest.java:11)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: handshake timed out after 10000ms
+	at com.example.tests.LoginTest.testLogin(LoginTest.java:11)
+Caused by: java.net.ConnectException: handshake timed out after 10000ms
+Caused by: io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+
